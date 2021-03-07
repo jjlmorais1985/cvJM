@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.display-4 {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.btn-outline-dark {
+    text-transform: uppercase;
+
+}
+.btn-outline-dark:hover {
+    color:#d5d5d5;
+}
+
+.navbar{
+    padding: .8rem;
+}
+.nav-link{
+    font-size: 1.1em ! important;
+}
+
+/*  carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto; 
+    -webkit-transtion: all 0.5 ease;
+    transition: all 0.5 ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    
+    transform: translateY(-55%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.carousel-caption h1 {
+    font: 500%;
+    text-transform: uppercase;
+    color: lightgray;
+    text-shadow: 1px 1px 15px rgb(143, 143, 143);
+}
+
+
+/*.carousel-caption h3{
+    font-size: 200%;    
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+}*/
+
+/*  Jumboton*/
+.jumbotron {
+    padding: 2.5rem;
+    border-radius: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+ .div {
+     padding: 2.5rem;
+ }
+
+#comp-div, #competences{
+    padding: 2.5rem;
+}
+
+/*  Competences*/
+.langages{
+    width: 100%;
+    height: 5rem;
+    font-size: x-large;
+}
+.lang-iten {
+    padding: 5%;
+}
+#langages{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+                        url("img/langages.jpg");
+    background-size: cover;
+}
+
+.fa-java{
+    color: #e52626;
+  }
+  
+  .fa-php {
+    color:  #00b31e;
+  }
+  
+  .fa-html5 {
+    color: #e54d26;
+  }
+  .fa-js{
+    color: #e9c600;
+  }
+  
+  .fa-css3-alt {
+    color:  #2163af;
+  }
+  
+  .fa-database {
+    color: #000658;
+  }
+
+  .fa-java, .fa-php, .fa-html5, .fa-js, .fa-css3-alt, .fa-database {
+      font-size: 5rem;
+      margin: 1rem;
+      -webkit-transition: all 0.5s step-end;
+      transition: all 0.5s ease;
+
+  }
+
+  .fa-java:hover, .fa-php:hover, .fa-html5:hover, .fa-js:hover, .fa-css3-alt:hover, .fa-database:hover {
+      font-size: 10rem;
+      margin: .5rem;
+
+  }
+
+  /*footer*/
+  .fa-bootstrap {
+      color: #9b65eb;
+      
+  }
+  .footer-logo {
+      width: 125px;
+      height: auto;
+  }
+
+  hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+  hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  /*---Media Queries --*/
+  @media (min-width: 992px) {
+
+  }
+
+  @media screen and (max-width: 768px) {
+      .carousel-item {
+          top: 50%;
+      }
+      .carousel-caption .btn {
+          font-size: 80%;
+          padding: 8px 14px;
+      }
+
+      .carousel-inner img {
+          height: 100%;
+      }
+      .display-2{
+          font-size: 350%;
+      }
+      .display-4 {
+          font-size: 200%;
+      }
+      .h5-footer {
+        font-size: 90%;
+    }
+
+  }
+
+  @media screen and (max-width: 576px) {
+      .jumbotron {
+          padding: 2rem;
+      }
+      .carousel-item {
+          top: 40%;
+      }
+      .display-2 {
+          font-size: 250%;
+      }
+      .display-4 {
+          font-size: 140%;
+      }
+      .h5-footer {
+          font-size: 80%;
+      }
+  }
+
+  
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
